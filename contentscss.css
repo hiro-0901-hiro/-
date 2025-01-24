@@ -1,0 +1,189 @@
+/* 全体のリセット */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* ボックスモデルの調整 */
+    background-color: #f8f8f8;
+}
+
+
+/* メインコンテンツの調整 */
+main {
+    margin-top: 100px; /* メニューの高さ分だけ余白を追加 */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* 最大幅をもう少し広く */
+    margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+    padding: 40px 20px; /* 上下の余白を増やし、バランスよく */
+    text-align: center;
+    background-color: #f8f8f8; /* ヘッダーに背景色を追加 */
+}
+
+header figure img {
+    width: 100%; /* 画像の幅を少し縮小してバランスを調整 */
+    height: auto;
+    margin: 20px 0; /* 画像周りにスペース */
+}
+
+header .container {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #333; /* 色を少し暗くして視認性を向上 */
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+header .MENU {
+    width: 100%;
+    background-color: #f0f0f0; /* メニュー背景色 */
+    position: fixed;
+    top: 0; /* メニューを画面上部に固定 */
+    left: 0;
+    z-index: 1000; /* メニューが常に最前面に表示されるように */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影を付けて立体感を出す */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+}
+
+header nav ul li a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    display: block; /* クリックしやすくするためにリンクをブロック要素に */
+    padding: 8px 15px;
+    border-radius: 5px; /* ボタンっぽく角を丸く */
+    transition: background-color 0.3s, color 0.3s; /* ホバー時のアニメーション */
+}
+
+header nav ul li a:hover {
+    background-color: #ff9800; /* ホバー時の背景色 */
+    color: white; /* ホバー時に文字色を白に変更 */
+}
+
+header .head1{
+    margin-bottom: 30px;
+}
+header .headlight{
+    color: brown;
+}
+header .head2{
+    margin-top: 30px;
+}
+
+/* メインコンテンツ */
+main {
+    margin: 100px 0px;
+}
+
+.main2 .p1 {
+    margin-top: 120px;
+}
+
+main h2 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+main .main2 p {
+    margin: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.main2 figure img{
+    width: 50%;
+    margin: 0 auto;
+}
+a.btn {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+a.btn:hover {
+    background-color: #e68900; /* ボタンのホバー時 */
+}
+.make2 figure img{
+    width: 100%;
+}
+.make3 figure img{
+    width: 80%;
+}
+
+.main3 h3{
+    padding-top: 100px;
+}
+.main3 video{
+    width: 80%;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px; /* ヘッダーの文字サイズを小さく */
+    }
+
+    header figure img {
+        width: 90%; /* モバイルでは画像の幅を広く */
+    }
+
+    header nav ul {
+        flex-direction: column; /* メニューを縦並びに */
+        align-items: center;
+    }
+
+    header nav ul li {
+        padding: 10px 0;
+    }
+
+    main h2 {
+        font-size: 20px; /* メインの見出しを少し小さく */
+    }
+
+    a.btn {
+        width: 100%; /* ボタンをフル幅に */
+    }
+}
+footer{
+    background-color: #333;
+}
+footer small{
+    background-color: #333;
+    color: #f0f0f0;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.red p{
+    color: red;
+}
